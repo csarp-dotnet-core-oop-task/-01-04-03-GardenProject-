@@ -15,5 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GardenProject\GardenProject.csproj" />
   </ItemGroup>
 </Project>
