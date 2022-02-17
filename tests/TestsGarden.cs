@@ -19,7 +19,7 @@ namespace GardenProject.Tests
             try
             {
                     GardenParcel flowerGarden = new GardenParcel(10, 15);
-                    GardenParcel kitchenGarden = new GardenParcel(10, 6);
+                    GardenParcel kitchenGarden = new GardenParcel(10, 16);
                     Garden marysGarden = new Garden("Mária", flowerGarden, kitchenGarden);
             }
             catch (Exception e)
@@ -35,9 +35,9 @@ namespace GardenProject.Tests
             try
             {
                 GardenParcel flowerGarden = new GardenParcel(10, 15);
-                GardenParcel kitchenGarden = new GardenParcel(10, 6);
+                GardenParcel kitchenGarden = new GardenParcel(10, 16);
                 Garden marysGarden = new Garden("Mária", flowerGarden, kitchenGarden);
-                string expected = "Mária kertjének összeterülete 210 négyzetméter.";
+                string expected = "Mária kertjének összeterülete 310 négyzetméter.";
                 string actual = marysGarden.ToString();
                 Assert.AreEqual(expected, actual, "A konstruktor nem megfelelően működik vagy a ToString nem megfelelő eredményt adja.");
             }
@@ -53,7 +53,7 @@ namespace GardenProject.Tests
             try
             {
                 GardenParcel flowerGarden = new GardenParcel(11, 15);
-                GardenParcel kitchenGarden = new GardenParcel(10, 6);
+                GardenParcel kitchenGarden = new GardenParcel(10, 16);
                 Garden marysGarden = new Garden("Mária", flowerGarden, kitchenGarden);
 
                 Assert.IsFalse(marysGarden.IsGardenGood, "Rossz kertméret esetén a kertet mégis jónak ítéli a kód.");
