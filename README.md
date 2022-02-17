@@ -32,7 +32,7 @@ Készítse el az osztályok UML diagramját!
 
 Tesztelésre használja a következő kódot:
 ```
-            GardenParcel kitchenGarden = new GardenParcel(10, 6);
+            GardenParcel kitchenGarden = new GardenParcel(10, 16);
             Garden marysGarden = new Garden("Mária", flowerGarden,kitchenGarden);
             Console.WriteLine(marysGarden);
             Console.WriteLine(marysGarden.KitchenGardenFenceElementsNumber);
@@ -42,7 +42,7 @@ Tesztelésre használja a következő kódot:
 A kód kimenete:
 ```
 Mária kertjének összeterülete 210 négyzetméter.
-80
+130
 125
-180
+230
 ```
